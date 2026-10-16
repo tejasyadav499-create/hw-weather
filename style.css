@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    background-image: url('images.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.weather {
+    background: white;
+    width: 350px;
+    margin: 100px auto;
+    border-radius: 15px; 
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.sky {
+    position: relative;
+    height: 100px;
+    margin: 20px;
+}
+
+.sun {
+    font-size: 60px;
+    display: inline-block;
+    animation: spin 8s linear infinite;
+}
+
+.cloud {
+    font-size: 55px;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    animation: move 3s ease-in-out infinite alternate;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+/* Sun spinning */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Cloud moving */
+@keyframes move {
+    from {
+        left: 60px;
+    }
+
+    to {
+        left: 140px;
+    }
+}
